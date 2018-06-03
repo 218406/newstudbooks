@@ -1,0 +1,88 @@
+
+@(title :String)(body: Html)
+
+<html>
+    <head>
+
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/bootstrap.min.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/bootstrap-theme.min.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/style.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("../../public/images/favicon.png")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("lib/bootstrap/css/fontawesome-all.min.css")">
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+                (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-8175974030896218",
+                    enable_page_level_ads: true
+                });
+        </script>
+    </head>
+
+    <body class="Site">
+        <main class="Site-content">
+
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div id="nav-container" class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <h1>Stud-Books</h1>
+                    </a>
+                </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="@routes.HomeController.index()">HOME</a></li>
+                        <li><a href="@routes.HomeController.books()">BOOKS</a></li>
+                        <li><a href="@routes.HomeController.about()">ABOUT</a></li>
+                    </ul>
+                </div>
+                    <!-- /.navbar-collapse -->
+            </div>
+                <!-- /.container -->
+        </nav>
+
+                <!-- Section: intro -->
+            <div id="intro" class="intro section-part">
+                @body
+            </div>
+
+                <!-- /Section: intro -->
+
+        </main>
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a href="@routes.HomeController.index()">HOME</a>
+
+                    <a href="@routes.HomeController.books()">BOOKS</a>
+
+                    <a href="@routes.HomeController.about()">ABOUT</a>
+                </p>
+
+                <p>Stud-Books &copy; 2018</p>
+            </div>
+
+        </footer>
+
+        <script src="@routes.Assets.versioned("js/jquery-3.3.1.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("js/bootstrap.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("js/custom.js")" type="text/javascript"></script>
+
+    </body>
+</html>

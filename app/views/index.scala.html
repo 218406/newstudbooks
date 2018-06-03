@@ -1,0 +1,29 @@
+
+    @layout("Home"){
+
+
+    <div class="section-adv">
+        <img src="@routes.Assets.versioned("images/adv.gif")" width="780" height="90" /></div>
+    </div>
+
+
+    <div class="justify-content-center container stud-logo">
+        <img src="@routes.Assets.versioned("images/sbooks.gif")" width="800" height="200" />
+        </br>
+        <p> Welcome to Stud-Books, a place where you can find very useful books that can help you learn your selected topic.</p>
+        </br>
+    </div>
+    <div class="section-part">
+
+        <h2>To get access please pay 9,99 PLN</h2>
+    </br>
+
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="UCP7N6CA8H2FU">
+            <input class="btn-fotos" type="submit" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.sandbox.paypal.com/pl_PL/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+    </div>
+    }
