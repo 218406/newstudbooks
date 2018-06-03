@@ -26,6 +26,6 @@ public class HomeController extends Controller {
     public Result books() {
         return ok(books.render());
     }
-    public Result openbook() { return ok(openbook.render());
+    public Result k1m27ujc() { return ok(k1m27ujc.render());
     }
 }
